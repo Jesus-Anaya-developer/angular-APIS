@@ -15,6 +15,7 @@
   justify-content: flex-start;
   transition: all ease-out 0.5s;
   transform: translateX(100%);
+
   &.active {
     transform: translateX(0);
   }
@@ -36,4 +37,9 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 15px;
   }
+}
+
+.swiperImg {
+  //height: 250px;
+  width: 500px;
 }
