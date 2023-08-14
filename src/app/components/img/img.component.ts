@@ -13,7 +13,6 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
-    console.log('change just img  =>' ,this.img);
     // code
   }
   @Input() alt: string = '';
@@ -23,9 +22,6 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   // counterFn: number | undefined;
 
   constructor() {
-    // before render
-    // NO async -- once time
-    console.log('constructor', 'imgValue =>', this.img);
   }
 
   ngOnChanges(changes: SimpleChanges) {
