@@ -1,3 +1,4 @@
+<button (click)="createNewProduct()">Create</button>
 <div class="products--grid">
   <app-product [product]="product" *ngFor="let product of products" (addedProduct)="onAddToShoppingCart($event)"
     (showProduct)="onShowDetail($event)"></app-product>
@@ -9,6 +10,7 @@
         <swiper-slide *ngFor="let img of productChosen.images"><img [src]="img" alt="" class="swiperImg"></swiper-slide>
       </swiper-container>
       <p>{{productChosen.description}}</p>
+      <button (click)="updateProduct()">editar</button>
     </div>
   </div>
 </div>
